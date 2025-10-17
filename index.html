@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>GestCoop — Página oficial</title>
+    <meta name="description"
+        content="GestCoop — aplicación web para cooperativas. Descargá instaladores, manuales y recursos.">
+    <!-- Open Graph / Social preview -->
+    <meta property="og:title" content="GestCoop — Descargar recursos e instaladores">
+    <meta property="og:description" content="Descargá instaladores, manual y recursos para GestCoop.">
+    <meta property="og:image" content="assets/images/preview.png">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <img src="assets/images/GestCoop.png" alt="GestCoop logo" class="logo">
+                <div class="brand-text">
+                    <h1>GestCoop</h1>
+                    <p class="tagline">La herramienta para gestionar cooperativas — simple y segura</p>
+                </div>
+            </div>
+
+            <nav class="header-actions">
+                <a class="btn btn-primary" href="#downloads">Descargar</a>
+                <a class="btn btn-ghost" href="#about">Acerca</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <h2>Gestión simple. Resultados reales.</h2>
+                    <p class="lead">GestCoop es una aplicación web diseñada para cooperativas: registro, tareas,
+                        materiales
+                        y facturación — todo en un panel intuitivo.</p>
+                    <div class="hero-cta">
+                        <a class="btn btn-primary-large" href="#downloads">Descargar instalador</a>
+                    </div>
+
+                    <ul class="benefits">
+                        <li>Instalador para Windows / Linux</li>
+                        <li>Guía de instalación (PDF)</li>
+                        <li>Actualizaciones y soporte</li>
+                    </ul>
+                </div>
+
+                <div class="hero-media">
+                    <div class="screenshot" id="screenshot-main"
+                        style="background-image:url('assets/images/screen1.png')"></div>
+
+                    <div class="screenshot-thumbs" id="thumbs">
+                        <div class="thumb active" data-img="assets/images/screen1.png">
+                            <i class="fas fa-house-user"></i>
+                        </div>
+                        <div class="thumb" data-img="assets/images/screen2.png">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="thumb" data-img="assets/images/screen3.png">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="thumb" data-img="assets/images/screen4.png">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="thumb" data-img="assets/images/screen5.png">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <div class="thumb" data-img="assets/images/screen6.png">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="thumb" data-img="assets/images/screen7.png">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="thumb" data-img="assets/images/screen8.png">
+                            <i class="fas fa-folder-open"></i>
+                        </div>
+                    </div>
+        </section>
+
+        <!-- Downloads -->
+        <section id="downloads" class="section downloads">
+            <div class="container">
+                <h3>Descargas</h3>
+                <p class="muted">Elegí el paquete que necesites. Los archivos se descargan directamente desde el
+                    servidor.</p>
+                <div class="downloads-grid">
+                    <article class="download-card">
+                        <h4>Recursos / Assets (zip)</h4>
+                        <p> Recursos necesarios para el funcionamiento de GestCoop, manual de usuario, guia de
+                            instalación y archivos adicionales.</p>
+                        <div class="download-actions">
+                            <a class="btn" id="dl-res" href="downloads/GestCoop-resources.zip" download>
+                                <i class="fa-solid fa-download"></i>
+                                Descargar.zip </a>
+                            <span class="meta">50 MB</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section about">
+            <div class="container">
+                <h3>Acerca del proyecto</h3>
+                <p>GestCoop nació para facilitar la gestión administrativa de pequeñas cooperativas. Nuestras
+                    prioridades
+                    son usabilidad, seguridad y facilidad de despliegue.</p>
+                <div class="about-grid">
+                    <div>
+                        <h4>Historia</h4>
+                        <p>Comenzamos como una necesidad interna y ahora lo compartimos con otras organizaciones
+                            similares.</p>
+                    </div>
+                    <div>
+                        <h4>Equipo</h4>
+                        <p>Equipo pequeño: diseño, backend, frontend y soporte.</p>
+                    </div>
+                    <div>
+                        <h4>Documentación</h4>
+                        <p>Encontrás la documentación completa en <a href="/docs">/docs</a> (o en el repositorio).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div class="left">
+                    <small>© <span id="year"></span> GestCoop — Todos los derechos reservados.</small>
+                </div>
+                <div class="right">
+                    <small>Versión <strong id="version">1.0.0</strong></small>
+                    <nav class="socials">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Contacto"><i class="fas fa-envelope"></i></a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
